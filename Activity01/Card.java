@@ -33,11 +33,8 @@ public class Card {
      * @param cardPointValue an <code>int</code> value
      *                  containing the point value of the card
      */
-    public Card(String cardRank, String cardSuit, int cardPointValue)
-    {
-        rank = cardRank;
-        suit = cardSuit;
-        pointValue = cardPointValue;
+    public Card(String cardRank, String cardSuit, int cardPointValue) {
+
     }
 
 
@@ -45,27 +42,24 @@ public class Card {
      * Accesses this <code>Card's</code> suit.
      * @return this <code>Card's</code> suit.
      */
-    public String suit() 
-    {
-        return this.suit;
+    public String suit() {
+
     }
 
     /**
      * Accesses this <code>Card's</code> rank.
      * @return this <code>Card's</code> rank.
      */
-    public String rank() 
-    {
-        return this.rank;
+    public String rank() {
+
     }
 
    /**
      * Accesses this <code>Card's</code> point value.
      * @return this <code>Card's</code> point value.
      */
-    public int pointValue()
-    {
-        return this.pointValue;
+    public int pointValue() {
+
     }
 
     /** Compare this card with the argument.
@@ -74,18 +68,8 @@ public class Card {
      *              are equal to those of the argument;
      *         false otherwise.
      */
-    public boolean matches(Card otherCard) 
-    {
-        if(this.suit.equals(otherCard.suit())&&
-            this.rank.equals(otherCard.rank())&&
-                this.pointValue==otherCard.pointValue())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+    public boolean matches(Card otherCard) {
+
     }
 
     /**
@@ -99,8 +83,7 @@ public class Card {
      *         and point value of the card.
      */
     @Override
-    public String toString() 
-    {
-        return this.rank + " of " + this.suit + "(point value = " + this.pointValue + " )";
+    public String toString() {
+
     }
 }
